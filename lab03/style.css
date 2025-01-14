@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-body {
+    margin: 50px auto;
+    padding: 30px 30px 0;
+    min-width: 60vw;
+    border: thick ridge rgb(76, 88, 91, 0.4);
+}
+
+img {
+    max-width: 150px;
+    margin-bottom: 30px;
+}
+
+.form-body {
+    padding: 20px 0 0;
+    margin-top: 30px;
+}
+
+.form-section {
+    padding: 20px 10px 20px 30px;
+    border: 3px solid rgb(76, 88, 91, 0.4);
+    margin-bottom: 50px;
+}
+
+.section-name {
+    background-color: white;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 0 8px;
+}
+
+.form-input-group {
+    display: flex;    
+}
+
+.form-input {
+    width: 50%;
+    display: flex;
+}
+
+.form-input > label {
+    width: 30%;
+}
+
+.form-input > input {
+    width: 70%;
+    margin-right: 40px;
+}
+
+.single-input {
+    padding-right: 40px;
+    margin-bottom: 30px;
+}
+
+.form-input-radio {
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.form-input-select > select {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    width: 70%;
+    margin-right: 40px;
+}
+
+.form-input-select > label {
+    display: inline-block;
+    width: 30%;
+}
+
+.form-input-checkbox {
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.form-input-checkbox > div {
+    display: flex;
+    gap: 10px;
+}
+
+.form-input-textbox {
+    width: 50%;
+}
+
+.form-input-textbox > label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-input-textbox > textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.form-date-time > div:last-of-type {
+    margin-bottom: 0;
+}
+
+.btn-field {
+    margin-bottom: 30px;
+}
+
+.btn-field > button {
+    font-size: 24px;
+    padding: 8px 20px;
+    margin-right: 30px;
+    /* color: white; */
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-submit {
+    border: 3px solid #2c974b;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+.btn-submit:hover {
+    color: white;
+    background-color: #2c974b;
+}
+
+.btn-reset {
+    border: 3px solid #F93827;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+.btn-reset:hover {
+    color: white;
+    background-color: #F93827;
+}

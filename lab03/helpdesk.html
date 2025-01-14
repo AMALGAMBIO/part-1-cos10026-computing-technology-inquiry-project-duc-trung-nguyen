@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CWA Help Desk Appointment" />
+    <meta name="keywords" content="HTML, Form, tags" />
+    <meta name="author" content="Duc Trung Nguyen" />
+    <title>CWA Help Desk Appointment</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-body">
+            <img src="./img/logo.png" alt="Logo">
+            <h1 class="main-header">CWA Help Desk Appointment</h1>
+            <div>
+                <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday.</p>
+                <p>Check Blackboard for when CWA tutors will be there.</p>
+            </div>
+
+            <!-- action="http://mercury.swin.edu.au/it000000/formtest.php -->
+            <form method="post"  class="form-body" action="https://mercury.swin.edu.au/it000000/formtest.php" >
+                <fieldset class="form-section">
+                    <legend class="section-name">
+                        Student Details
+                    </legend>
+
+                    <div class="form-input single-input">
+                        <label for="id">Student ID</label>
+                        <input type="text" name="id" id="id" required="required" pattern="\d{7,10}">
+                    </div>
+
+                    <div class="form-input-group">
+                        <div class="form-input">
+                            <label for="givenName">Given Name</label>
+                            <input type="text" name="givenName" id="givenName" required="required" pattern="[a-zA-Z\s]{1,15}">
+                        </div>
+
+                        <div class="form-input">
+                            <label for="familyName">Family Name</label>
+                            <input type="text" name="familyName" id="familyName" required="required" pattern="[a-zA-Z]{1,}">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-section">
+                    <legend class="section-name">
+                        Your Unit
+                    </legend>
+
+                    <div class="form-input form-input-radio">
+                        <div>
+                            <input type="radio" name="unit" id="cos10011" value="cos10011" required="required">
+                            <label for="cos10011">C0S10011</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="unit" id="cos60004" value="cos60004">
+                            <label for="cos60004">C0S60004</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="unit" id="cos60007" value="cos60007">
+                            <label for="cos60007">C0S60007</label>
+                        </div>
+                    </div>
+
+                    <div class="form-input form-input-select">
+                        <label for="tutor">Your Tutor</label>
+                        <select name="tutor" id="tutor" required="required">
+                            <option value="">Please Select Your Tutor</option>
+                            <option value="ethanH">Ethan Harrison</option>
+                            <option value="oliviaB">Olivia Bennett</option>
+                            <option value="lucasR">Lucas Ramirez</option>
+                            <option value="sophiaC">Sophia Carter</option>
+                            <option value="noahP">Noah Patel</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-section">
+                    <legend class="section-name">
+                        Issue
+                    </legend>
+
+                    <div class="form-input form-input-checkbox">
+                        <div>
+                            <label for="html">HTML</label>
+                            <input type="checkbox" id="html" name="issue[]" value="html" checked="checked">
+                        </div>
+
+                        <div>
+                            <label for="css">CSS</label>
+                            <input type="checkbox" id="css" name="issue[]" value="css">
+                        </div>
+
+                        <div>
+                            <label for="javascript">JavaScript</label>
+                            <input type="checkbox" id="javascript" name="issue[]" value="javascript">
+                        </div>
+
+                        <div>
+                            <label for="piip">PIIP</label>
+                            <input type="checkbox" id="piip" name="issue[]" value="piip">
+                        </div>
+
+                        <div>
+                            <label for="mysql">MySQL</label>
+                            <input type="checkbox" id="mysql" name="issue[]" value="mysql">
+                        </div>
+                    </div>
+
+                    <div class="form-input-textbox">
+                        <label for="issue-desc">Description of Issue</label>
+                        <textarea id="issue-desc" name="issue-desc" rows="6" placeholder="Write the description of your issue here..." required="required"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-section form-date-time">
+                    <legend class="section-name">
+                        Preferred Date / Time
+                    </legend>
+
+                    <div class="form-input single-input">
+                        <label for="date">Date</label>
+                        <input type="text" name="date" id="date" placeholder="dd/mm/yyyy" required="required" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}">
+                    </div>
+
+                    <div class="form-input single-input">
+                        <label for="time">Time</label>
+                        <input type="text" name="time" id="time" placeholder="00:00" required="required" pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]">
+                    </div>
+                </fieldset>
+                
+                <div class="btn-field">
+                    <button type="submit" class="btn-submit">Book</button>
+                    <button type="reset" class="btn-reset">Reset Form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

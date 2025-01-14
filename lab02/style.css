@@ -1,0 +1,42 @@
+body {
+    padding: 0 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    margin: 30px 0 10px;
+    line-height: 2.8rem;
+}
+
+.unit-logo {
+    margin: 30px 0 0;
+    border: 1px solid grey;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+
+.em-1 {
+    font-weight: 700;
+}
+
+.section-1 {
+    margin-bottom: 50px;
+}
+
+.footer-divider {
+    margin-top: 150px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
