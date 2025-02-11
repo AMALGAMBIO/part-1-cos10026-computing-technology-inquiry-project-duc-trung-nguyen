@@ -1,0 +1,8 @@
+.booking-details {
+	text-transform: capitalize;
+    font-weight: 600;
+   }
+
+.err-msg {
+    color: red;
+}

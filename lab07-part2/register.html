@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Rohirrim Booking</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Rohirrim Booking Form" >
+	<meta name="keywords" content="MiddleEarth, Tours, Rohan" >
+	<meta name="author" content="Grima Wormtongue" />
+    <!-- Place the general style sheet before specific CSS so the specific overides the general formatting-->
+	<link rel="stylesheet" type="text/css" href="style/style.css" >
+	<link rel="stylesheet" type="text/css" href="style/register.css" >	
+</head>
+
+<body>
+
+
+	<header><h1>Rohirrim Dude Ranch</h1></header>
+	<nav>
+		<ul>
+			<li><a href="construction.html">Home</a></li>
+			<li><a href="construction.html">Accommodation</a></li>
+			<li><a href="construction.html">Horse Riding</a></li>
+			<li><a href="construction.html">Sight Seeing</a></li>
+			<li><a href="register.html">Book</a></li>
+		</ul>
+	</nav>
+
+<article>
+<form id="regform" method="post" action="processbooking.php" novalidate="novalidate">
+<fieldset id="person"> 
+	<legend>Your details:</legend>
+	<p><label for="firstname">Enter your Firstname</label>
+	  <input type="text" name="firstname" id="firstname" size="20"  >
+	 </p> 
+	 <p><label for="lastname">Enter your Lastname</label>
+		<input type="text" name="lastname" id="lastname" size="20"  >
+	   </p> 
+
+	   <p><label for="age">Enter your Age</label>
+		<input type="text" name="age" id="age" >
+	   </p> 
+	<fieldset>
+		<legend>Species:</legend>
+			<label for="human">Human</label>
+			<input type="radio" name="species" id="human" class="chkbox" value="human" checked="checked"/><br />
+			<label for="dwarf">Dwarf</label>
+			<input type="radio" name="species" id="dwarf" class="chkbox" value="dwarf" /><br />
+			<label for="elf">Elf</label>
+			<input type="radio" name="species" id="elf" class="chkbox" value="elf" /><br />
+			<label for="hobbit">Hobbit</label>
+			<input type="radio" name="species" id="hobbit" class="chkbox" value="hobbit" /><br />
+	</fieldset>
+	
+  </fieldset>
+<fieldset id="trip"> 
+ <legend>Your trip:</legend>
+	<fieldset>
+		<legend>Booking:</legend>
+			<label for="accom">Accommodation</label>
+			<input type="checkbox" name="accom" id="accom" value="Accomodation" /><br />
+			<label for="4day">4 Day Tour</label>
+			<input type="checkbox" name="4day" id="4day" value="4day" /><br />
+			<label for="10day">10 Day Tour</label>
+			<input type="checkbox" name="10day" id="10day" value="10day" /><br />
+	</fieldset>
+	<p>
+		<label for="food">Menu preferences</label>
+		<select name="food" id="food">
+			<option value="none" selected="selected">None</option>
+			<option value="lembas">Lembas</option>
+			<option value="mushrooms">Mushrooms</option>
+			<option value="ent">Ent Draft</option>
+			<option value="cram">Cram</option>
+		</select>
+	</p>
+	<p>
+	<!-- Firefox does not support the HTML5 date input yet so we need to use text -->
+	<label for="date">Date</label>
+			<input type="text" id="date" name="bookday" maxlength="10" size="10" />
+	</p>
+	<p>
+		<label for="partysize">Number of travellers:</label>
+			<input type="text" id="partysize" name="partysize">
+	</p>
+</fieldset>
+  <div id="bottom"> </div>
+  <p><input type="submit" value="Book Now!" />
+     <input type="reset" value="Reset" />
+  </p>
+</form>
+
+
+</article>
+
+<footer>
+<div>
+	<h1 class="fineprint">Conditions Apply</h1>
+	<p class="fineprint">  Rohirrim Dude Ranch management takes no responsiblity for any injury, beheadings, spells (sleeping or otherwise) , spider-bites suffered by guests, or for anything whatsoever.	</p> 
+</div>
+	<p id="contact" >Any enquiries please email the <a href="mailto:something@something.com">manager</a></p>
+</footer>
+
+</body>
+</html>
