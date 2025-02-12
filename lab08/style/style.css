@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80vw;
+    margin: 40px auto;
+    flex: 1;
+}
+
+.header-container {
+    width: 90vw;
+    margin: 10px auto;
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content .logo {
+    height: 80px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+}
+
+.nav-bar a:hover {
+    color: #3674B5;
+}
+
+.nav-bar a::after {
+    display: block;
+    content: "";
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-bar a:hover::after {
+    width: 100%;
+    background-color: #3674B5;
+}
+
+footer {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer-container {
+    width: 90vw;
+    margin: 10px auto;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.socials {
+    width: 40%;
+}
+
+.socials > img {
+    height: 50px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.social-links a:hover {
+    background-color:#3674B5;
+    border: 1px solid #3674B5;
+}
+
+.social-links img {
+    width: 30px;
+    z-index: 10;
+}
+
+.footer-links {
+    flex-grow: 2;
+}
+
+.footer-links h2 {
+    margin-bottom: 50px;
+}
+
+.link-group {
+    display: flex;
+    gap: 150px;
+}
+
+.link-group div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.link-group a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.link-group a::after {
+    display: block;
+    content: "";
+    margin: auto;
+    height: 1px;
+    width: 0px;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.link-group a:hover::after {
+    width: 100%;
+    background-color: white;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 0.7rem;
+}
+
+#login-form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-field {
+    display: flex;
+}
+
+.input-field > label {
+    width: 140px;
+}
+
+.input-field > input {
+    width: 200px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: 2px grey solid;
+    border-radius: 8px;
+    background-color: grey;
+    color: white;
+    transition: all 0.1 s ease-in-out;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: green;
+    border: 2px green solid;
+}
+
+.welcome-msg {
+    font-size: 2rem;
+    margin: 50px 0;
+}
+
+.welcome-msg > span {
+    font-weight: 600;
+}
+
+.error-msg {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.error-msg > p {
+    display: inline-block;
+    margin-top: 100px;
+    padding: 30px;
+    background-color: white;
+    color: black;
+    z-index: 11;
+    border: 4px solid black;
+}
+
+.movie-table {
+    margin-top: 40px;
+}
+
+.movie-table th, .movie-table td {
+    padding: 10px;
+}
+
+.movie-table, .movie-table th, .movie-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.movie-table tr {
+    margin-top: 15px;
+}
+
+.movie-table thead tr th {
+    min-width: 60px;
+    text-align: left;
+}
