@@ -29,6 +29,7 @@ session_start();
                     <th>Price</th>
                     <th>YOM</th>
                 </tr>
+            </thead>
 
             <tbody>
                 <?php
@@ -59,7 +60,6 @@ session_start();
                 }
                 ?>
             </tbody>
-            </thead>
         </table>
     </div>
 </body>
