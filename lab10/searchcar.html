@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MySQL Introduction">
+    <meta name="keywords" content="PHP, MySQL, Database">
+    <meta name="author" content="Duc Trung Nguyen">
+    <title>Search Car</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Search for Cars</h1>
+        <form method="POST" action="cars_search.php">
+            <div class="input-field">
+                <label for="carmake">By Car Make:</label>
+                <input type="text" name="carmake" id="carmake">
+                <button class="btn" type="submit" name="search" value="make">Search</button>
+            </div>
+
+            <div class="input-field">
+                <label for="carmodel">By Car Model:</label>
+                <input type="text" name="carmodel" id="carmodel">
+                <button class="btn" type="submit" name="search" value="model">Search</button>
+            </div>
+
+            <div class="input-field">
+                <label for="pricemin">By Minimum Price:</label>
+                <input type="text" name="pricemin" id="pricemin">
+                <button class="btn" type="submit" name="search" value="pricemin">Search</button>
+            </div>
+
+            <div class="input-field">
+                <label for="pricemax">By Maximum Price:</label>
+                <input type="text" name="pricemax" id="pricemax">
+                <button class="btn" type="submit" name="search" value="pricemax">Search</button>
+            </div>
+
+            <div class="input-field">
+                <label for="yom">By Year of Manufacture:</label>
+                <input type="text" name="yom" id="yom">
+                <button class="btn" type="submit" name="search" value="yom">Search</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
